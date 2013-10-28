@@ -94,7 +94,7 @@ package com.novafusion.net.amfphp
          */
         public function addParams(...params):Call
         {
-            params.push.apply(this, params); // using the method of a function object because the push method needs a comma seperated parameter list rather than an array
+            this.params.push.apply(this, params); // using the method of a function object because the push method needs a comma seperated parameter list rather than an array
             return this;
         }
         
