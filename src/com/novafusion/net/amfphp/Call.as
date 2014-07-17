@@ -136,12 +136,12 @@ package com.novafusion.net.amfphp
         {   
             if (resultListener != null)
             {
-                addEventListener(CallEvent.RESULT, resultListener);
+                removeEventListener(CallEvent.RESULT, resultListener);
             }
             
             if (faultListener != null)
             {
-                addEventListener(CallEvent.FAULT, faultListener);
+                removeEventListener(CallEvent.FAULT, faultListener);
             }
             
             return this;
